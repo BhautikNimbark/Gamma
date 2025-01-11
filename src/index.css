@@ -56,6 +56,9 @@
     --chart-5: 340 75% 55%
   }
 }
+body{
+  background-color:gray
+}
 @layer base {
   * {
     @apply border-border;
