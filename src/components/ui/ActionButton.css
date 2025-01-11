@@ -1,0 +1,48 @@
+.action-button-container {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.action-button-container:hover {
+  opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.button {
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #555;
+  margin: 0 2px;
+  border-radius: 4px;
+  background-color: #444;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+.popup {
+  position: absolute;
+  top: -35px; /* Adjust to position the popup above the buttons */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #222;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
