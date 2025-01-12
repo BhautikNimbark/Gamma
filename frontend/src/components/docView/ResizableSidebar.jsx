@@ -5,7 +5,6 @@ import { SlidePreview } from './SlidePreview';
 import { MinimizeIcon as ResizeIcon } from 'lucide-react';
 import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
 import { Copy, Scissors, CopyIcon as Duplicate, PlusCircle, Link, Trash2 } from 'lucide-react'
-
 import {
   ContextMenu,
   ContextMenuContent,
