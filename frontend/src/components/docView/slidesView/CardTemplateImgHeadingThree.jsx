@@ -4,6 +4,7 @@ import { CardMenu } from "./Menu/CardMenu"
 import TitleInput from "./CardComponents/TitleInput"
 import Heading from './CardComponents/Heading'
 import ParagraphInput from './CardComponents/ParagraphInput'
+import AddButton from "./AddButton"
 function CardTemplateImgHeadingThree() {
   const [previews, setPreviews] = useState([null, null, null])
 
@@ -41,6 +42,7 @@ function CardTemplateImgHeadingThree() {
   }
 
   return (
+    <div className="flex flex-col items-center ">
     <div className="min-h-screen w-full md:w-[60vw] md:min-h-[25vw] rounded-lg bg-[#342c4e] p-6 relative">
       <div className="absolute top-4 left-11">
         <CardMenu
@@ -113,6 +115,11 @@ function CardTemplateImgHeadingThree() {
           </div>
         ))}
       </div>
+      
+    </div>
+    <div className="mt-5">
+    <AddButton />
+    </div>
     </div>
   )
 }

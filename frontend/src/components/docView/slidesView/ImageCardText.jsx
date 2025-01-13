@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { CardMenu } from "./Menu/CardMenu"
 import TitleInput from "./CardComponents/TitleInput"
 import ParagraphInput from "./CardComponents/ParagraphInput"
+import AddButton from "./AddButton"
 
 function ImageCardText({ children, ...props }) {
   const [preview, setPreview] = useState(null)
@@ -65,6 +66,7 @@ function ImageCardText({ children, ...props }) {
   }
 
   return (
+    <div className="flex flex-col items-center">
     <div
       className="min-h-screen  w-full md:w-[60vw] md:min-h-[20vh] rounded-lg bg-[#342c4e] p-6 relative"
       onMouseMove={handleMouseMove}
@@ -146,6 +148,10 @@ function ImageCardText({ children, ...props }) {
             <ParagraphInput placeholder="Start typing..." />
           </div>
       </div>
+    </div>
+    </div>
+    <div className="mt-5">
+    <AddButton />
     </div>
     </div>
   )
