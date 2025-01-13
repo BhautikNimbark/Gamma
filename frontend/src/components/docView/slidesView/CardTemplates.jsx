@@ -160,7 +160,7 @@ export default function CardTemplates({ children, ...props }) {
         style={{ position: "relative", marginTop: "20px" }}
       >
         {/* {" "} */}
-        <AddButton />
+        {/* <AddButton /> */}
       </div>
     </div>
   );
