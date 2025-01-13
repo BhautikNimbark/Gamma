@@ -61,7 +61,7 @@ export default function TextEditor() {
     const text = editorRef.current?.textContent || ''
     if (!text.trim()) {
       if (event.type === 'blur') {
-        editorRef.current.innerHTML = '<span class="text-muted-foreground">Start typing...</span>'
+        editorRef.current.innerHTML = '<span class="text-muted-foreground">Untitled Card</span>'
       } else {
         editorRef.current.innerHTML = ''
       }
@@ -179,7 +179,7 @@ export default function TextEditor() {
           onFocus={handlePlaceholder}
           onBlur={handlePlaceholder}
         >
-          <input type="text" className="text-white w-full bg-transparent text-3xl" placeholder='Untitled Text'/>
+          <span type="text" className="text-white/50 w-full bg-transparent text-3xl">Untitle Card </span>
         </div>
       </CardContent>
     </Card>

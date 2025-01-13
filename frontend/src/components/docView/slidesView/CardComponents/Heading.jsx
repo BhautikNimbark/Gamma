@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react'
+import { useRef, useState,useEffect  } from 'react'
+
 import { Bold, Italic, Underline, Code, AlignLeft, AlignCenter, AlignRight, Type, Palette } from 'lucide-react'
 import { 
   DropdownMenu,
@@ -31,6 +32,16 @@ const SIZES = [
 export default function Heading() {
   const editorRef = useRef(null)
   const [alignment, setAlignment] = useState('left')
+
+  useEffect(() => {
+    if (editorRef.current) {
+      // Set default text content and style
+      editorRef.current.innerHTML = '<span>Heading 4</span>'
+      editorRef.current.style.fontSize = '1.4rem' // Default size (Normal)
+      editorRef.current.style.color = 'text-white' // Default color (Purple)
+      editorRef.current.style.textAlign = 'left' // Default alignment
+    }
+  }, [])
 
   const applyCommand = (command, value = null) => {
     document.execCommand(command, false, value)
@@ -178,7 +189,7 @@ export default function Heading() {
           onFocus={handlePlaceholder}
           onBlur={handlePlaceholder}
         >
-          <input  className="text-white/50 w-full  text-[15px] bg-transparent" placeholder='Enter Subheading' />
+          <span  className="text-white/50 w-full text-[25px] bg-transparent" >Start typing...</span>
         </div>
       </CardContent>
     </Card>

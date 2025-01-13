@@ -107,11 +107,12 @@ function CardTemplateImgHeadingThree() {
             </div>
 
             {/* Heading */}
-            <ParagraphInput />
+            <Heading />
+            
             
 
             {/* Subheading */}
-            <Heading />
+            <ParagraphInput />
           </div>
         ))}
       </div>
