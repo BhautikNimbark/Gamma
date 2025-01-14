@@ -179,7 +179,7 @@ export default function TextEditor() {
           onFocus={handlePlaceholder}
           onBlur={handlePlaceholder}
         >
-          <input  className="text-white/50 w-full text-xl bg-transparent" placeholder='Enter Subheading' />
+          <span className="text-white/50 w-full text-xl bg-transparent">Start typing...</span>
         </div>
       </CardContent>
     </Card>

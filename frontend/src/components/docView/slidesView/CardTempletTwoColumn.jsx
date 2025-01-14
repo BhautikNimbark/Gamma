@@ -3,6 +3,7 @@ import React from "react"
 import TitleInput from "./CardComponents/TitleInput"
 import ParagraphInput from "./CardComponents/ParagraphInput"
 import { CardMenu } from "./Menu/CardMenu"
+import AddButton from "./AddButton"
 
 function CardTemplateTwoColumn({ children, ...props }) {
   const handleEdit = () => {
@@ -14,7 +15,7 @@ function CardTemplateTwoColumn({ children, ...props }) {
   }
 
   const handleDuplicate = () => {
-    console.log("Duplicate clicked")
+    console.log("Duplicate clicke")
   }
 
   const handleShare = () => {
@@ -26,6 +27,7 @@ function CardTemplateTwoColumn({ children, ...props }) {
   }
 
   return (
+    <div className="flex flex-col items-center ">
     <div className="min-h-screen w-full md:w-[60vw] md:min-h-[25vw] rounded-lg bg-[#342c4e] p-6 relative">
       <div className="absolute top-4 left-11">
         <CardMenu
@@ -54,6 +56,10 @@ function CardTemplateTwoColumn({ children, ...props }) {
           </div>
         </div>
       </div>
+    </div>
+    <div className="mt-5">
+    <AddButton />
+    </div>
     </div>
   )
 }
