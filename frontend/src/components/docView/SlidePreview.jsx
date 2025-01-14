@@ -35,7 +35,7 @@ export function SlidePreview({ number, title, content, isActive, onClick, id }) 
       </div>
       <div className="flex items-center gap-2">
         <span className="text-xs text-muted-foreground">{number}</span>
-        <span className="text-xs truncate flex-1">Untitle Card </span>
+        <span className="text-xs truncate flex-1">Untitle Cards </span>
       </div>
       </div>
       // </ContextMenuTrigger>

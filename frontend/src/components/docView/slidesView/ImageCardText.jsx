@@ -58,7 +58,7 @@ function ImageCardText({ children, ...props }) {
   }
 
   const handleShare = () => {
-    console.log("Share clicked")
+    console.log("Share clicke")
   }
 
   const handleDownload = () => {

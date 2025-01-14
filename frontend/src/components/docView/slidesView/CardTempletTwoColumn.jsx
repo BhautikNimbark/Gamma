@@ -15,7 +15,7 @@ function CardTemplateTwoColumn({ children, ...props }) {
   }
 
   const handleDuplicate = () => {
-    console.log("Duplicate clicked")
+    console.log("Duplicate clicke")
   }
 
   const handleShare = () => {

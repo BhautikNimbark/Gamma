@@ -96,7 +96,7 @@ export default function CardTemplates({ children, ...props }) {
               <div className="h-24 flex items-center justify-center overflow-hidden">
                 <img
                   src={card2}
-                  alt="Two Columns"
+                  alt="Two Column"
                   className="w-full h-full object-contain rounded-lg"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center rounded-lg">
